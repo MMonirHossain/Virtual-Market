@@ -1,0 +1,95 @@
+
+<?php 
+ob_start();
+session_start();
+$user=$_SESSION['name'];
+if($user==''){
+header('location:../');
+}
+
+    if(isset($_REQUEST['ID'])){
+    $con=mysqli_connect("localhost","root","","test");
+    if(!$con)echo "Database not connected";
+    $query=" DELETE FROM `order` WHERE order_id= '$_REQUEST[ID]'";
+    
+    mysqli_query($con,$query);
+    
+    mysqli_close($con);
+    }
+
+
+
+?>
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <link href="orders.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+            <h1></h1>
+            <h2></h2>
+            <h2></h2>
+            <div class="vieworder">
+                    <table>
+                        <tr>
+                            <th>Order ID</th>                    
+                            <th>Product ID</th>
+                            <th>Product name</th>
+                            <th>Delivary Address</th>
+                            <th>Contact</th>
+                            <th>Quantity</th>
+                            <th>Total</th>  
+                            <th>Deliverd</th>  
+
+                        </tr>
+
+                       
+                    <?php
+                       
+
+                        $con=mysqli_connect("localhost","root","","test");
+                        $result=mysqli_query($con,"SELECT * FROM `order` where user_name='$user' ");
+                        while( $row=mysqli_fetch_array($result) ){
+                    ?>
+                    <tr>
+                        <td><?php echo $row['order_id'];?></td>
+                        <td><?php echo $row['p_id'];?></td>
+                        <td><?php echo $row['p_name'];?></td>
+                        <td><?php echo $row['d_address'];?></td>
+                        <td><?php echo $row['c_number'];?></td>
+                        <td><?php echo $row['quantity'];?></td>
+                        <td><?php echo $row['total'];?></td>
+                        <td><a href="orders.php?ID=<?php echo $row['order_id'];?>">Delete</a></td>
+                        
+
+                    </tr>
+                    <?php }
+                    mysqli_close($con);
+                    ?>
+                        
+                    </table>
+            </center>
+</div>
+
+
+
+    
+</body>
+
+<style>
+    body{
+        
+        margin-left: 250px;
+    }
+</style>
+</html>

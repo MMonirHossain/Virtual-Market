@@ -1,0 +1,72 @@
+*{margin:0;padding:0}
+body{
+	background-image: url("logback.jpg");
+}
+
+.login{
+
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%); 
+	height:300px;
+	width: 300px;
+	border: 1px solid #000;
+	padding: 50px 0px;
+	font-family: montserrat;
+	color: #fff;
+	background: #000;
+	opacity: 60%;
+}
+
+
+.login h2,.login p,.login input,.login td{margin: 10px 10px 10px 10px;}
+.login h2,.login p{text-align: center;}
+.login table{
+
+}
+
+.login input{
+	width:150px;
+	padding:10px;
+}
+
+.createshop{
+	color:#CFCFCF;
+	margin-bottom: 100px;
+	margin-top: 20px;
+
+}
+.createshop form{
+	
+}
+.createshop input{
+	font-size: 14px;
+	font-family: Montserrat;	
+	padding: 5px;	
+	width:200px;
+}
+
+.createshop td{
+	padding:7px 0px;
+	font-size: 16px;
+}
+.createshop h2,.createshop p,.createshop table{text-align: center;}
+.createshop h2,.createshop p{margin:10px;}
+
+.btn input,.btn p{
+	border-radius: 5px;
+	border: 1px solid #4257D3;
+	background-color: #fff;
+	color: #4257D3;
+}
+.btn input:hover,.btn p:hover{
+	background-color: #4257D3;
+	color: #fff;
+}
+
+.home_back a{text-decoration: none;color: #4257D3; background-color:#1F1F1F; padding:5px;}
+.home_back a:hover{
+	background-color: #4257D3;
+	color:#fff;
+}

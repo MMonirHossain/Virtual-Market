@@ -1,0 +1,32 @@
+.mainview{
+    position: absolute;
+     left:260px;
+    top: 80px;
+    font-family: Montserrat ; 
+   
+}
+
+.vieworder table{
+    width: 1050px;
+    
+}
+.vieworder table th{
+    background: #1E1E1E;
+    color: #fff;
+}
+.vieworder table td,.vieworder table th{
+    text-align: center;
+    
+}
+.vieworder table td a{
+    text-decoration: none;
+    color:#7B7537;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+.vieworder table td a:hover{
+    background: #7B7537;
+    color:#fff;
+}

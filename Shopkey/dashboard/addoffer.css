@@ -1,0 +1,69 @@
+.mainoffer{
+    font-style: sans-serif;
+    width:100%;
+    height:100%; 
+}
+.mainoffer h2{
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.addoffer{
+    
+    margin: 0px auto 0px auto;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    background-color: #48995B;
+    border-radius:2px;
+    border: 2px solid #007ACC;
+    box-shadow: #BB56B9;
+    color: black;
+}
+#addoffer{
+    
+    margin-left: 500px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    padding-top:10px;
+
+}
+#name{
+    width: 300px;
+    border: 1px solid #ddd;
+    height:50px;
+    border-radius: 3px;
+    outline: 0;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px #000  
+}
+#category{
+    width:195px;
+    height:30px;
+    border-radius: 3px;
+}
+#image{
+    width:200px;
+    height:50px;
+}
+#submit{
+    
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #410F9B;
+    border-radius: 3px;
+    background-color: #48995B;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #000;
+    text-align:center;
+    margin-bottom: 5px;
+}
+#submit:hover {
+    background: #24ACF2;
+}

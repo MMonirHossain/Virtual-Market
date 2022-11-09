@@ -1,0 +1,32 @@
+.mainview{
+    position: absolute;
+     left:260px;
+    top: 80px;
+    font-family: Montserrat ; 
+   
+}
+
+.editproduct table{
+    width: 1050px;
+    
+}
+.editproduct table th{
+    background: #1E1E1E;
+    color: #fff;
+}
+.editproduct table td,.editproduct table th{
+    text-align: center;
+    
+}
+.editproduct table td a{
+    text-decoration: none;
+    color:#7B7537;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+.editproduct table td a:hover{
+    background: #7B7537;
+    color:#fff;
+}
